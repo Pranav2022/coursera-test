@@ -1,0 +1,251 @@
+/* CSS reset  */
+*{
+    margin: 0;
+    padding:0; 
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:56px
+}
+/* navigation bar  */
+#navbar{
+    display: flex;
+    position: sticky;
+    font-family: 'Baloo Bhai 2', cursive;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* navigation bar: logo and image */
+#logo{
+    margin: 10px 34px;
+    cursor: pointer;
+
+}
+
+/* navigation bar: img  */
+#logo img{
+    
+    height: 59px;
+    margin: 3px 6px;
+    
+}
+/* navigation bar: list style  */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    padding-top: 22px;
+    
+}
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 22px;
+    border-radius: 19px;
+    color: white;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 678px;
+}
+#home::before{
+    content: " ";
+    background: url('bg1.jpg')no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 773px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+}
+#home h1:hover{
+    color: tomato;
+    text-shadow:10px 10px 10px white;
+}
+#home p{
+    
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+
+}
+.btn{
+    background-color: brown;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 20px;
+    margin: 19px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: rgb(114, 73, 73);
+    color: rgb(30, 255, 0);
+    transform: scale(1.1);
+}
+#service-container{
+    z-index: 23;
+    height: 80vh;
+}
+/* services section  */
+#services{
+    display: flex;
+    margin: 34px ;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 86px 29px;
+    margin: 26px 10px;
+    border-radius: 23px;
+    background-color: #f2f2f2;
+}
+
+#services .box img{
+    height: 136px;
+    display: block;
+    margin: auto;
+}
+
+/* clients-section */
+#clients-section{
+    position: relative;
+    height: auto;
+}
+#clients-section::before{
+    content: "";
+    background: url('bg.jpg')no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clients h1{
+    font-size: 3.8rem;
+    text-transform: capitalize;
+}
+.client-item img{
+    height: 198px;
+    padding: -1px 103px;
+    margin-top: 69px;
+}
+.client-item img:hover{
+    transform: scale(1.1);
+}
+.client-item{
+    padding: -1px 56px;
+    margin: 17px;
+}
+/* contact section  */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#contact-section{
+    height: 750px;
+    position: relative;
+    width: 100vw;
+}
+#contact-section::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    left: 0px;
+    opacity: 0.7;
+    background: url('contact.jpg')no-repeat center center/cover;
+}
+#contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+#contacts input{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    border-radius: 7px;
+}
+#contacts textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 9px;
+}
+.contacts form{
+
+    width: 40%;
+
+}
+#contacts label{
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* utility classes */
+.H-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    cursor: pointer;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.H-primary:hover{
+    color: tomato;
+}
+.H-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    cursor: pointer;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.center{
+    text-align: center;
+}
+p{
+    cursor: pointer;
+}
